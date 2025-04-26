@@ -1,0 +1,130 @@
+body{
+    background: linear-gradient(90deg,#ccffff,#d1fafa);
+    color: black;
+}
+
+h1{
+    font-size: 50px;
+    text-shadow: 3px  3px  0px  rgba(0,0,0,0.4);
+    margin: 10px;
+}
+
+h2{
+    
+    font-size: 40px;
+    text-shadow: 3px  3px  0px  rgba(0,0,0,0.4);
+    margin: 10px;
+}
+
+
+hr{
+    size: 50%;
+    width: 50%;
+    position: left;
+}
+
+.class1{
+    border-radius: 30px;
+    background: linear-gradient(90deg,#80e5ff,#1ad1ff);
+    padding-bottom: 5px;
+}
+
+.class11{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+
+.class12{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.connect:visited{
+    margin:20px;
+    background-color: blue;
+}
+
+.class2{
+    background: linear-gradient(130deg,#ffff99,#ffff4d);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.class21{
+    margin: 40px;
+    font-size: 20px;
+    border: #2ebf91;
+    border-radius: 15px  15px  15px  15px ;
+    background:linear-gradient(90deg, #adebeb, #17d1d1);
+    background-color: darkmagenta;
+    padding: 20px;
+    width: 60px;
+}
+
+.class3{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(170deg,#ff9999,#ff4d4d);
+    width: 70%;
+}
+
+.class31:visited{
+    font-size: 25px;
+    text-shadow: 3px  3px  0px  rgba(0,0,0,0.3);
+    margin: 10px;
+    background-color: blue;
+}
+
+.class32{
+    height:100px;
+}
+
+.class4{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: baseline;
+    justify-content: left;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: linear-gradient(170deg,#99ff99,#4dff4d);
+    width: 80%;
+    height: 400px;
+    overflow:auto;
+}
+
+.class5{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+footer{
+    border-radius: 10px;
+    width: 98%;
+    font-size: 30px;
+    background:  linear-gradient(90deg,#80e5ff,#1ad1ff);
+    margin-top: 100px;
+    margin: 10px;
+    bottom: 0px;
+    position: fixed;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHAPITRE 4</title>
+        <link  href="style1.css" rel="stylesheet">
+    </head>
+    <body class="body4">
+        <header>
+            <h1 class="chap4"><strong><center>CHAPITRE 4: Utilisez Des Fonctionnalités Avancèes De HTML Et CSS </center></strong></h1>
+            <hr>
+            <div class="RETOUR">
+            <a href="../TP 2.html" class="retour">RETOUR</a>
+            </div>
+        </header>
+        <p>
+            <dl>
+                <ol type="I">
+                    <dt><h2><li>Ajoutez Des Tableaux</li></h2>
+                       <dd><ul type="disc">
+                        <li>
+                            Un tableau s'insère avec la balise HTML  <em>&lt;table&gt;</em>  et se définit 
+                            <br>ligne par ligne avec  <tr>.
+                        </li>
+                        <p></p>
+                        <li>
+                            Chaque ligne comporte des cellules  <em>&lt;td&gt;</em>  (cellules normales) 
+                            <br>ou  <em>&lt;th&gt;</em>   (cellules d'en-tête).
+                        </li>
+                        <p></p>
+                        <li>
+                            Le titre du tableau se définit avec  <em>&lt;caption&gt;</em>.
+                        </li>
+                        <p></p>
+                        <li>
+                            On peut ajouter une bordure aux cellules du tableau HTML avec 
+                            <br>la propriété CSS <em>border</em>  . Pour coller les bordures entre elles, 
+                            <br>on utilise la propriété CSS  <em>border-collapse</em>.
+                        </li>
+                        <p></p>
+                        <li>
+                            Un tableau peut être divisé en trois sections grâce aux balises 
+                            <br>HTML <em>&lt;thead&gt;</em>  (en-tête),  <em>&lt;tbody&gt;</em>  (corps) et  <em>&lt;tfoot&gt;</em>
+                            <br> (bas du tableau). L'utilisation de ces balises n'est pas obligatoire.
+                        </li>
+                        <p></p>
+                        <li>
+                            En HTML, on peut fusionner des cellules horizontalement avec 
+                            <br>l'attribut  colspan, ou verticalement avec  rowspan. Il faut 
+                            <br>indiquer combien de cellules doivent être fusionnées.
+                        </li>
+                        <p></p>
+                       </ul>
+
+                       <dt><h2><li>Créez Des Formulaires</li></h2>
+                        <dd><ul type="disc">
+                            <li>
+                                Un formulaire est englobé par la balise HTML   <em>&lt;form&gt;</em><em>&lt;/form&gt;</em>  
+                                <br>à laquelle on ajoute les attributs<em>method</em>  et  <em>action</em>.
+                            </li>
+                            <p></p>
+                            <li>
+                                On utilise ensuite d'autres balises HTML pour permettre au 
+                                <br>visiteur du site de saisir des informations :
+                                <ul type="circle">
+                                    <li>
+                                        la balise orpheline  <em>&lt;input&gt;</em>  pour un champ de saisie monoligne ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        la balise en paire  <em>&lt;textarea&gt;</em> <em>&lt;/textarea&gt;</em>  pour un 
+                                        <br>champ de saisie multiligne ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        la balise en paire  <em>&lt;select&gt;</em> <em>&lt;/select&gt;</em>  suivi d'options 
+                                        <br>avec la balise en paire  <em>&lt;option&gt;</em> <em>&lt;/option&gt;</em>  pour une 
+                                        <br>liste déroulante.
+                                    </li>
+                                </ul>
+                            </li>
+                            <p></p>
+                            <li>
+                                Le champ  <em>&lt;input&gt;</em>  peut également être configuré pour saisir d'autres types de données : 
+                                <br>e-mail, URL, numéro de téléphone, date, etc.
+                            </li>
+                            <p></p>
+                            <li>
+                                Un label peut être relié à n'importe quel input avec l'attribut  <em>for</em>  correspondant à l'attribut  
+                                <br>id  pour le champ utilisé.
+                            </li>
+                        </ul>
+
+                        <p></p>
+                        <dt><h2><li>Finalisez Un Formulaire Et Ajoutez Un Bouton D'envoi</li></h2>
+                            <dd><ul type="disc">
+                                <li>
+                                    Il est possible de regrouper les champs au sein d'une balise  <em>&lt;fieldset&gt;</em>  qui comporte 
+                                    <br>une légende, avec la balise  <legend>.
+                                </li>
+                                <p></p>
+                                <li>
+                                    On peut sélectionner automatiquement un champ en précisant  l'attribut <em>autofocus</em>.
+                                </li>
+                                <p></p>
+                                <li>
+                                    Il est également possible de rendre un champ obligatoire avec l'attribut  required.
+                                </li>
+                                <p></p>
+                                <li>
+                                    Le bouton qui permet de valider le formulaire est créé à partir d'une balise input en faisant :  
+                                    <br><em>&lt;input type="submit" value="Envoyer"&gt;</em>
+                                </li>
+                        </ul>
+
+                        <dt><h2><li>Utilisez Le Reponsive Design Avec Media Queries </li></h2>
+                        <dd>Pour adapter un site internet aux différentes tailles d'écran, plusieurs techniques sont nécessaires :
+                        <ul type="disc">
+                            <li>
+                                Il faut tout d'abord réussir à sélectionner les différentes tailles d'écran disponibles, afin 
+                                <br>d'appliquer le style souhaité. 
+                            </li>
+                            <p></p>
+                            <li>
+                                Pour cela, on a recours aux media queries qui sont la manière de "conditionner" le style appliqué : 
+                                <br>"Si l'écran de l'utilisateur est plus petit que la taille  <em>XXXpx</em>  , alors appliquer ce style".
+                            </li>
+                            <p></p>
+                            <li>
+                                Il est ensuite possible d'utiliser les différentes astuces :
+                                <ul type="circle">
+                                    <li>
+                                        <em>display</em>: none  pour cacher un élément qui ne rentre pas sur les tailles d'écran 
+                                        <br>plus petites ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <em>overflow</em>  pour permettre de scroller avec la souris dans un élément container ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <em>min-width</em>  et  <em>max-width</em>  pour définir des tailles minimum et maximum.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                      
+                </ol>
+            </dl>
+        </p>
+    </body>
+</html>
+        

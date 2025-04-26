@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHAPITRE 2</title>
+        <link  href="style1.css" rel="stylesheet">
+    </head>
+    <body class="body2">
+        <header>
+            <h1 class="chap2"><strong><center>CHAPITRE 2: Mettez En forme Vos Page Web Avec CSS</center></strong></h1>
+            <hr>
+            <div class="RETOUR">
+            <a href="../TP 2.html" class="retour">RETOUR</a>
+            </div>
+        </header>
+        <p>
+            <br>
+            <dl>
+                <ol type="I">
+                     <dt><h2><li>Intégrez Le CSS Dans La Page HTML</li></h2>
+                        <dd><ul type="disc">
+                            <li>
+                                CSS est un autre langage qui vient compléter le HTML. Son rôle est de mettre 
+                                <br>en forme votre page web.
+                            </li>
+                            <p></p>
+                            <li>
+                                Pour écrire le code CSS, on crée un fichier séparé portant l'extension .css  
+                                <br>comme style.css.
+                            </li>
+                            <p></p>                           
+                            <li>
+                                Pour lier les fichiers CSS et HTML, on rajoute une ligne dans la balise 
+                                <br><head> </head> du fichier HTML :  
+                                <br><link href="style.css" rel="stylesheet">
+                            </li>
+                            <p></p>              
+                            <li>
+                                En CSS, on sélectionne les portions de la page HTML qu'on veut modifier, et 
+                                <br>on change leur présentation avec des propriétés CSS :
+                                <br>
+                                <div class="chap21">
+                                balise1 <br>
+                                { <br>
+                                    propriete1: valeur1;<br>
+                                    propriete2: valeur2;<br>
+                                }
+                                </div>
+                            </li>
+                            <p></p>
+                            <li>
+                                Il existe plusieurs façons de sélectionner la portion de page que l'on veut 
+                                <br>mettre en forme. Par exemple, on peut viser :
+                                <ul type="circle">
+                                    <li>
+                                        toutes les balises d'un même type, en écrivant simplement leur nom 
+                                        <br>(<em>h1</em> par exemple) ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        certaines balises spécifiques, auxquelles on a donné des noms à l'aide 
+                                        <br>des attributs <em>class</em> ou <em>id</em>(<em>.nom-classe</em> ou <em>#nom-id</em>) ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        uniquement les balises qui se trouvent à l'intérieur d'autres balises (<em>h3</em>, <em>em</em>).
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                            <dt><h2><li>Changez L'apparence Du Texte </li></h2>
+                                <dd><ul type="disc">
+                                    <li>
+                                        On modifie la taille du texte avec la propriété CSS <em>font-size</em>.
+                                    </li>
+                                    <p></p>
+                                    <li>
+                                        On peut indiquer la taille en pixels, comme <em>16px</em> ; ou encore en “em”, comme <em>1.3em</em>.
+                                    </li>
+                                    <p></p>
+                                    <li>
+                                        On indique la police du texte avec la propriété CSS  <em>font-family</em> . 
+                                    </li>
+                                    <p></p>
+                                    <li>
+                                        De nombreuses propriétés de mise en forme du texte existent : font-style pour 
+                                        <br>l'italique, font-weight pour la mise en gras, text-decoration pour le soulignement.
+                                    </li>
+                                    <p></p>
+                                    <li>
+                                        Le texte peut être aligné avec la propriété CSS <em>text-align</em>.
+                                    </li>
+                                </ul>
+
+                                <dt><h2><li>Ajouter De La Couleur Et Du fond</li></h2>
+                                    <dd><ul type="disc">
+                                        <li>
+                                            On change la couleur du texte avec la propriété  color  et la couleur de <em>fond</em> 
+                                            <br>avec la propriété <em>background-color</em>.
+                                        </li>
+                                        <p></p>
+                                        <li>
+                                            On peut indiquer une couleur en écrivant son nom en anglais, <em>black</em>  par 
+                                            <br>exemple, sous forme hexadécimale, comme  <em>#FFC8D3</em>, ou en notation RGB, 
+                                            comme  <em>rgb(250,25,118)</em>.
+                                        </li>
+                                        <p></p>
+                                        <li>
+                                            On peut ajouter une image de fond avec la propriété <em>background-image</em>. On 
+                                            <br>peut choisir de fixer l'image de fond, ou encore de la positionner où on veut 
+                                            <br>sur la page.
+                                        </li>
+                                        <p></p>
+                                        <li>
+                                            On peut rendre une portion de la page transparente avec la propriété  
+                                            <br><em>opacity</em>  ou avec la notation  <em>RGBA</em>  (une extension de la notation RGB, où 
+                                            <br>la quatrième valeur indique le niveau de transparence).
+                                        </li>
+                                    </ul>
+
+                                    <dt><h2><li>Créez Des Bordures Et Des Ombres</li></h2>
+                                        <dd><ul type="disc">
+                                           <li>
+                                            On peut appliquer une bordure à un élément avec la super-propriété CSS  
+                                            <br><em>border</em>. Il faut indiquer la largeur de la bordure, sa couleur et son type 
+                                            <br>(simple, double, pointillés, tirets). 
+                                           </li>
+                                           <p></p>
+                                           <li>
+                                            On peut arrondir les bordures avec la propriété CSS  border-radius.
+                                           </li>
+                                           <p></p>
+                                           <li>
+                                            On peut ajouter une ombre aux blocs de texte avec  <em>box-shadow</em>. On doit 
+                                            <br>indiquer le décalage vertical et horizontal de l'ombre, son niveau d'adoucissement et sa couleur.
+                                           </li>
+                                           <p></p>
+                                           <li>
+                                            Le texte peut lui aussi avoir une ombre avec  <em>text-shadow</em>.
+                                           </li>
+                                        </ul>
+
+                                        <dt><h2><li>Créez Des Apparances Dynamics</li></h2>
+                                            <dd><ul type="disc">
+                                               <li> 
+                                                En CSS, on peut modifier l'apparence de certaines sections
+                                                <br>dynamiquement, après le chargement de la page, lorsque 
+                                                <br>certaines interactions se produisent. On utilise pour cela 
+                                                <br>les pseudo-classes.
+                                               </li>
+                                               <p></p>
+                                               <li>
+                                                La pseudo-classe  :hover   modifie l'apparence d'un élément 
+                                                <br>au survol (par exemple : a:hover  modifie l'apparence des 
+                                                <br>liens hypertextes lorsque la souris pointe dessus).  .
+                                               </li>
+                                               <p></p>
+                                               <li>
+                                                La pseudo-classe  :active  modifie l'apparence des liens 
+                                                <br>hypertextes au moment du clic.
+                                               </li>
+                                               <p></p>
+                                               <li>
+                                                La pseudo-classe :visited modifie l'apparence des liens 
+                                                <br>hypertextes lorsqu'un lien a déjà été visité.
+                                               </li>
+                                               <p></p>
+                                               <li>
+                                                La pseudo-classe  :focus  modifie l'apparence d'un élément 
+                                                <br>sélectionné via la touche "tab".
+                                               </li>
+                                               <p></p>
+                                               <li>
+                                                Encore aujourd'hui, certaines propriétés ne sont pas totalement 
+                                                <br>reconnues par tous les navigateurs.
+                                               </li>
+                                            </ul>
+                </ol>
+            </dl>    
+        </p>
+    </body>
+</html>

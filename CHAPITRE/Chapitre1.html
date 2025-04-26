@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHAPITRE 1</title>
+        <link  href="style1.css" rel="stylesheet">
+    </head>
+    <body class="body1">
+        <header>
+            <h1 class="chap1"><strong><center>CHAPITRE 1: Maitrisez Les Bases De HTML</center></strong></h1>
+            <hr>
+            <div class="RETOUR">
+            <a href="../TP 2.html" class="retour">RETOUR</a>
+            </div>
+        </header>
+        <p>
+            <br>
+            <dl>
+                <ol type="I">
+                     <dt><h2><li>Comprenez La Differnce Entre HTML Et CSS</li></h2>
+                        <dd><ul type="disc">
+                            <li>HTML constitue la structure d'une page web.</li>
+                            <p></p>
+                            <li>Le CSS permet d'ajouter du style.</li>    
+                            <p></p>                       
+                            <li>Les deux langages se complètent avec un rôle bien défini pour chacun.</li>     
+                            <p></p>         
+                            <li>Le navigateur est un logiciel qui permet de lire les langages du Web : HTML et CSS.</li>
+                            <p></p>
+                            <li>Tous les navigateurs embarquent des outils de développement, dont l'outil d'inspection qui
+                                <br>permet d'accéder au HTML et au CSS d'une page.</li>
+                        </ul>
+                        
+                        <dt><h2><li>Créez Votre Première Page Web En HTML </li></h3>
+                            <dd><ul type="disc">
+                                <li>Pour créer une page web, on crée un fichier ayant l'extension  <em>.html</em>  , qui pourra être 
+                                    <br>ouvert dans le navigateur web simplement en faisant un double-clic dessus.
+                                </li>
+                                <p></p>
+                                <li>Chaque fichier HTML est constitué de balises.</li>
+                                <p></p>
+                                <li>Les balises peuvent avoir plusieurs formes :</li>
+                                <p></p>
+                                    <ul type="circle">
+                                          <li><em>&lt;balise&gt; &lt;/balise&gt;</em>  : balises en paires, elles s'ouvrent et se ferment pour délimiter le 
+                                            <br>contenu (début et fin d'un titre, par exemple) ;
+                                          </li>
+                                          <br>
+                                          <li><em>&lt;balise&gt;</em>  : balises orphelines (on ne les insère qu'en un seul exemplaire),
+                                            <br>elles permettent d'insérer un élément à un endroit précis (par exemple une image).
+                                          </li>
+                                          <br>
+                                      </ul>
+                                  <li>Les balises sont parfois accompagnées d'attributs pour donner des indications supplémentaires,
+                                    <br>ou paramétrer un élément (exemple :  <em>&lt;img src="photo.jpg"&gt;</em>  ).
+                                  </li>
+                                  <p></p>
+                                  <li>Une page web est constituée de deux sections principales : l'en-tête <em>&lt;head&gt; &lt;/head&gt;</em>  dont le
+                                    <br>contenu n'apparaît pas dans l'affichage de la page et le corps <em>&lt;body&gt; &lt;body&gt;</em>  qui, lui,
+                                    <br>apparaît.
+                                  </li>
+                            </ul>
+
+                            <dt><h2><li>Organisez Votre Texte </li></h2>
+                                <dd><ul type="disc">
+                                    <li>Le HTML comporte de nombreuses balises qui nous permettent d'organiser
+                                        <br>le texte de notre page. Ces balises donnent des indications comme “Ceci est un
+                                        <br>paragraphe”, “Ceci est un titre”, etc.
+                                    </li>
+                                    <p></p>
+                                    <li>Les paragraphes sont définis par la balise  <em>&lt;p&gt; &lt;/p&gt;</em>  , et les sauts de ligne
+                                        <br>par la balise orpheline   <em>&lt;br&gt;</em>.
+                                    </li>
+                                    <p></p>
+                                    <li>Il existe six niveaux de titre, de  <em>&lt;h1&gt; &lt;/h1&gt;</em>  à  <em>&lt;h6&gt; &lt;/h6&gt;</em>, à utiliser selon l'importance du
+                                        <br>titre.
+                                    </li>
+                                    <p></p>
+                                    <li>On peut mettre en valeur certains mots avec les balises  <em>&lt;strong&gt;,  &lt;em&gt;  et  &lt;mark&gt;</em>.
+                                    </li>
+                                    <p></p>
+                                    <li>Pour créer des listes, on doit utiliser la balise  <em>&lt;ul&gt;</em>  (liste à puces, non ordonnée) ou  <em>&lt;ol&gt;</em>
+                                        <br>(liste ordonnée). À l'intérieur, on insère les éléments avec une balise  <em>&lt;;li&gt;</em>  pour chaque item.
+                                    </li>
+                                </ul>
+
+                                <dt><h2><li>Créez Un Lien Hypertexte En HTML</li></h2>
+                                    <dd><ul type="disc">
+                                        <li>Un lien hypertexte (ou hyperlien) permet de changer de page. Par défaut, il est
+                                            <br>en bleu et souligné dans le navigateur mais on peut modifier ce style en CSS.
+                                        </li>
+                                        <p></p>
+                                        <li>Pour faire un lien hypertexte vers un site web existant, on utilise la balise  
+                                            <br><em>&lt;a&gt;</em>  avec l'attribut  <em>href</em> pour indiquer <strong>l'adresse de la page web cible</strong>. Il
+                                                <br>s'agit d'un <strong>lien absolu</strong>. Exemple :
+                                                <br>  <em>&lt;a href="https://openclassrooms.com"&gt;</em> .
+                                        </li>
+                                        <p></p>
+                                        <li>Pour faire un lien hypertexte vers une autre page de son site, on utilise la 
+                                            <br>balise <em>&lt;a&gt;</em>  avec l'attribut  <em>href</em> pour indiquer <strong>le nom du fichier en local</strong>. Il 
+                                                <br>s'agit d'un <strong>lien relatif</strong>. Exemple :  <em>&lt;a href="page2.html"&gt;</em> .
+                                        </li>
+                                        <p></p>
+                                        <li>Un lien hypertexte peut aussi permettre d'amener vers un endroit précis d'une 
+                                            <br>page. Il faut créer une ancre avec l'attribut  id  pour “marquer” cet endroit 
+                                            <br>dans la page, puis faire un lien vers l'ancre comme ceci :
+                                            <br>  <em>&lt;a href="#ancre"&gt;</em> .
+                                        </li>
+                                    </ul>
+
+                                    <dt><h2><li>Insérez Des Images</li></h2>
+                                        <dd><ul type="disc">
+                                           <li> Il existe plusieurs formats d'images adaptés au Web : PNG, JPG…
+                                           </li>
+                                           <p></p>
+                                           <li>
+                                               On insère une image avec la balise <em>&lt;img&gt;</em>  .
+                                           </li>
+                                           <p></p>
+                                           <li>
+                                               <em>&lt;img&gt;</em> doit obligatoirement comporter au moins ces deux attributs : <em>src</em> 
+                                               <br>(source de l'image) et   <em>alt</em> (courte description de l'image).
+                                           </li>
+                                           <p></p>
+                                           <li>Il est possible d'afficher une autre version d'une image grâce à un lien qui 
+                                            <br>entoure l’image.
+                                           </li>
+                                        </ul>
+                </ol>
+            </dl>    
+        </p>
+        </body>
+    
+</html>

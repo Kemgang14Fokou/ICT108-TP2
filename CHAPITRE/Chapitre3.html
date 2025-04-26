@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHAPITRE 3</title>
+        <link  href="style1.css" rel="stylesheet">
+    </head>
+    <body class="body3">
+        <header>
+            <h1 class="chap3"><strong><center>CHAPITRE 3: Agencez Le Contenu De Vos Pages</center> </strong></h1>
+            <hr>
+            <div class="RETOUR">
+            <a href="../TP 2.html" class="retour">RETOUR</a>
+            </div>
+        </header>
+        <p>
+            <dl>
+                <ol type="I">
+                    <dt><h2><li>Structurez Votre Page</li></h2>
+                       <dd><ul type="disc">
+                        <li>
+                        Plusieurs balises permettent de délimiter les différentes zones 
+                        <br>qui constituent la page web :
+                        <ul type="circle">
+                            <li>
+                                <em>&lt;header&gt;</em>  : en-tête ;
+                            </li>
+                            <br>
+                            <li>
+                                <em>&lt;footer&gt;</em>  : pied de page ;
+                            </li>
+                            <br>
+                            <li>
+                                <em>&lt;nav&gt;</em>  : liens principaux de navigation ;
+                            </li>
+                            <br>
+                            <li>
+                                <em>&lt;section&gt;</em>  : section de page ;
+                            </li>
+                            <br>
+                            <li>
+                                <em>&lt;aside&gt;</em>  : informations complémentaires ;
+                            </li>
+                            <br>
+                            <li>
+                                <em>&lt;article&gt;</em>  : article indépendant.
+                            </li>
+                        </ul>
+                        </li>
+                        <p></p>
+                        <li>
+                            Ces balises peuvent être imbriquées les unes dans les autres.
+                            <br> Ainsi, une section peut avoir son propre en-tête.
+                        </li>
+                        <p></p>
+                        <li>
+                            Ces balises ne s'occupent pas de la mise en page. Elles servent 
+                            <br>seulement à indiquer à l'ordinateur la fonction du texte qu'elles 
+                            <br>encadrent. On pourrait très bien placer l'en-tête en bas de la 
+                            <br>page, si on le souhaitait.
+                        </li>
+                       </ul>
+
+                       <dt><h2><li>Découvrez Le Modèle Des Boites</li></h2>
+                        <dd><ul type="disc">
+                           <li> 
+                               On distingue deux principaux types de balises en HTML :
+                               <ul type="circle">
+                                <li>
+                                    les balises de type  <em>block</em>  comme  <em>&lt;p&gt;</em>  ou  <em>&lt;h1&gt;</em> 
+                                    <br>créent un retour à la ligne et occupent par défaut toute la 
+                                    <br>largeur disponible. Elles se suivent de haut en bas ;
+                                </li>
+                                <br>
+                                <li>
+                                    les balises de type  <em>inline</em>  comme  <em>&lt;a&gt;</em>  ou  <em>&lt;strong&gt;</em>  
+                                    <br>délimitent du texte au milieu d'une ligne. Elles se 
+                                    <br>suivent de gauche à droite.
+                                </li>
+                               </ul>
+                           </li>
+                           <p></p>
+                           <li>
+                            On peut modifier la taille d'une balise de type <em>block</em>  avec les 
+                            <br>propriétés CSS  <em>width</em> (largeur) et  <em>height</em>  (hauteur).
+                           </li>
+                           <p></p>
+                           <li>
+                            Les éléments de la page disposent chacun de <em>padding</em>. 
+                            <br>(marges intérieures) et de <em>margin</em>  (marges extérieures).
+                           </li>
+                           <p></p>
+                           <li>
+                            On peut centrer le contenu d'un bloc dont la largeur est définie 
+                            <br>par <em>width</em> avec <em>margin: auto</em>;
+                           </li>
+                        </ul>
+
+                        <dt><h2><li>Faites Votre Mise En Page Avec Flexbox</li></h2>
+                            <dd><ul type="disc">
+                                <li>
+                                    Le principe de Flexbox est d'avoir un conteneur avec plusieurs 
+                                    <br>éléments à l'intérieur. Avec  <em>display:</em> flex;  sur le conteneur, 
+                                    <br>les éléments à l'intérieur sont agencés en mode Flexbox 
+                                    <br>(horizontalement, par défaut).
+                                </li>
+                                <p></p>
+                                <li>
+                                    Flexbox peut gérer toutes les directions. Avec  
+                                    <br><em>flex-direction</em> , on peut indiquer si les éléments sont
+                                    <br> agencés horizontalement (par défaut) ou verticalement. Cela 
+                                    <br>définit ce qu'on appelle l'axe principal.
+                                </li>
+                                <p></p>
+                                <li>
+                                    L'alignement des éléments se fait sur l'axe principal avec  
+                                    <br><em>justify-content</em>  et sur l'axe secondaire avec  <em>align-items</em> .
+                                </li>
+                                <p></p>
+                                <li>
+                                    Avec  <em>flex-wrap</em>, on peut autoriser les éléments à revenir à la 
+                                    <br>ligne s'ils n'ont plus d'espace.
+                                </li>
+                                <p></p>
+                                <li>
+                                    S'il y a plusieurs lignes, on peut indiquer comment les lignes 
+                                    <br>doivent se répartir entre elles avec  <em>align-content</em>.
+                                </li>
+                        </ul>
+
+                        <dt><h2><li>Découvrez Les Bases De CSS Grids</li></h2>
+                        <dd><ul type="disc">
+                            <li>
+                                Les CSS Grids sont complémentaires à Flexbox et permettent de 
+                                <br>créer facilement des mises en page plus élaborées que Flexbox, 
+                                <br>sans forcément avoir des éléments de la même taille.
+                            </li>
+                            <p></p>
+                            <li>
+                                Pour déclarer une grid, on déclare simplement  display: grid;  
+                                <br>sur le conteneur : notre navigateur comprend tout de suite que 
+                                <br>nos éléments sont dans la grid.
+                            </li>
+                            <p></p>
+                            <li>
+                                On définit les colonnes avec grid-template-columns  et les rangées 
+                                <br>avec grid-template-rows : en fonction du nombre de valeurs passées, 
+                                <br>de nouvelles colonnes et rangées sont créées.
+                            </li>
+                            <p></p>
+                            <li>
+                                En plus des unités classiques  px  ,  em  ,  rem  et  %  , les  fr  
+                                <br>sont encore plus simples, et permettent d'indiquer une fraction de 
+                                <br>la grille.
+                            </li>
+                            <p></p>
+                            <li>
+                                gap  permet d'espacer les éléments entre eux.
+                            </li>
+                            <p></p>
+                            <li>
+                                Les grids créent implicitement des lignes horizontales et verticales
+                                 <br>délimitant les différentes rangées et colonnes.
+                            </li>
+                            <p></p>
+                            <li>
+                                Chaque élément peut avoir :
+                                <ul type="circle">
+                                    <li>
+                                        Son propre point de départ horizontal avec  grid-row-start  ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Son point d'arrivée horizontal avec  grid-row-end  ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Son point de départ vertical avec  grid-column-start  ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Et son point d'arrivée vertical avec  grid-column-end  .
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <dt><h2><li>Abordez D'autres Techniques De Mise En Page</li></h2>
+                        <dd><ul type="disc">
+                            <li>
+                                La propriété <em> display</em>  permet de changer le comportement de base d'un élément : 
+                                <ul type="circle">
+                                    <li>
+                                        transformer un élément  <em>inline</em>  en  <em>block</em>  ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        inversement, un élément <em>block</em>  en  <em>inline</em>  ;
+                                    </li>
+                                    <br>
+                                    <li>
+                                        mais aussi de faire un mélange des deux avec  <em>inline-block</em>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <p></p>
+                            <li>
+                                Le positionnement relatif permet de décaler un bloc par rapport à 
+                                <br>sa position normale
+                            </li>
+                            <p></p>
+                            <li>
+                                Le positionnement absolu permet de placer un élément où l'on souhaite sur 
+                                <br>la page, au pixel près.
+                            </li>
+                            <p></p>
+                            <li>
+                                Un élément A positionné en absolu à l'intérieur d'un autre élément B 
+                                <br>(lui-même positionné en absolu, fixe ou relatif) se positionne par 
+                                <br>rapport à l'élément B, et non par rapport au coin en haut à gauche de la page.
+                            </li>
+                            <p></p>
+                            <li>
+                                Lorsque plusieurs éléments s'empilent, il est possible de les ordonner 
+                                <br>avec  <em>z-index</em>.
+                            </li>
+                        </ul>
+                </ol>
+            </dl>
+        </p>
+    </body>
+</html>
+        
